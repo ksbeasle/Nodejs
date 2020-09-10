@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HELLO</h1>
+    <a href="/game/5f5479fef4ca2a3c6a2dd490">Click to get a single game (example to grab a single game using params</a>
+    <br>
+    <a class="delete" data-doc="5f5479fef4ca2a3c6a2dd490">Click to delete a single game (hardcoded) jsut an example also using ajax</a>
+
+    <script>
+
+    const deleteMe = document.querySelector('a.delete')
+
+    deleteMe.addEventListener('click', (e) => {
+        const endpoint = `/game/${deleteMe.dataset.doc}`
+        console.log(endpoint)
+
+        fetch(endpoint, {
+            method: 'DELETE'
+            //ignore the error below
+        }).then((response)=>{response.json()})
+            .then(data => {
+                console.log(data)
+                // window.location.href = data.redirect
+            }).catch(err => { console.log(err )})
+    } )
+            
+        
+    </script>
+
+</body>
+</html>
+

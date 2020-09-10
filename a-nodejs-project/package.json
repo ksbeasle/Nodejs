@@ -1,0 +1,25 @@
+{
+  "name": "a-nodejs-project",
+  "version": "1.0.0",
+  "description": "Nodejs project with MongoDB ",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksbeasle/Nodejs.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "Kahlil Beasley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksbeasle/Nodejs/issues"
+  },
+  "homepage": "https://github.com/ksbeasle/Nodejs#readme"
+}
