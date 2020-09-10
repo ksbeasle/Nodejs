@@ -10,7 +10,7 @@ const GameRouter = require('./routes/gameRoutes')
 // })
 
 //connect to mongodb - we also listen here so we wont take requests until DB is connected.
-const dbURI = 'mongodb+srv://admin333:password333@node.ut56y.mongodb.net/basic-db?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://:@node.ut56y.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(dbURI)
     .then((result) => {
         app.listen(3000)

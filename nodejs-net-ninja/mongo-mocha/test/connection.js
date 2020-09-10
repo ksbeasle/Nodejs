@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const dbURI = 'mongodb+srv://admin333:password333@node.ut56y.mongodb.net/basic-mongo?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://:@node.ut56y.mongodb.net/basic-mongo?retryWrites=true&w=majority'
 
 //ES6 promises
 mongoose.Promise = global.Promise
